@@ -11,7 +11,7 @@ object ResultArbitraries {
       InvalidRequest,
       InvalidMethod,
       Unauthorized,
-      (arbitrary[Throwable] map Explosion)
+      (arbitrary[Throwable] map Explosion).sample.get // total hack to get compiling, don't do this at home kids
     ))
 
   implicit def ResultArbitrary[A: Arbitrary]: Arbitrary[Result[A]] =

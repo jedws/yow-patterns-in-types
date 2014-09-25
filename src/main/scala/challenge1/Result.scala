@@ -19,6 +19,8 @@ case object InvalidMethod extends Error
 case object Unauthorized extends Error
 
 object Error {
+  val explosion: Throwable => Error = Explosion
+
   implicit def ErrorEqual =
     Equal.derived[Error]
 }
