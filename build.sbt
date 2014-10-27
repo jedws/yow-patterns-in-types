@@ -9,10 +9,11 @@ libraryDependencies ++= Seq(
 )
 
 resolvers ++= Seq(
-  "oss snapshots"      at "http://oss.sonatype.org/content/repositories/snapshots"
-, "oss releases"       at "http://oss.sonatype.org/content/repositories/releases"
-, "atlassian-public"   at "https://maven.atlassian.com/content/groups/atlassian-public/"
-, "atlassian-internal" at "https://maven.atlassian.com/content/groups/internal/"
+  "oss snapshots"       at "http://oss.sonatype.org/content/repositories/snapshots"
+, "oss releases"        at "http://oss.sonatype.org/content/repositories/releases"
+, "atlassian-public"    at "https://maven.atlassian.com/content/groups/atlassian-public/"
+, "atlassian-internal"  at "https://maven.atlassian.com/content/groups/internal/"
+, "Scalaz Bintray Repo" at "http://dl.bintray.com/scalaz/releases"
 )
 
 scalacOptions := Seq(
